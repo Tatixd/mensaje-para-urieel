@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensaje para mi Rulitos</title>
+  <style>
+    body {
+      background: #1a1a2e;
+      color: #f0e5de;
+      font-family: 'Georgia', serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #e3c9b2;
+    }
+    p {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    .flowers {
+      width: 200px;
+      height: 200px;
+      background-image: radial-gradient(circle, #ff007f, #ff66b2);
+      border-radius: 50%;
+      margin: 30px auto;
+      position: relative;
+    }
+    .flowers:before, .flowers:after {
+      content: '';
+      position: absolute;
+      background: radial-gradient(circle, #ff007f, #ff66b2);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .flowers:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 150px;
+      height: 150px;
+    }
+    .flowers:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 130px;
+      height: 130px;
+    }
+    .glow {
+      text-shadow: 0 0 10px #ff007f, 0 0 20px #ff66b2, 0 0 30px #ff007f;
+    }
+  </style>
+</head>
+<body>
+  <div class="flowers"></div>
+  <h1 class="glow">Después de un largo día de trabajo, lo mejor es descansar</h1>
+  <p>Qué más daría por estar contigo siempre, te amo muchísimo, mi rulitos.</p>
+</body>
+</html>
